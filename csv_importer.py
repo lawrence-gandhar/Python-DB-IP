@@ -4,8 +4,6 @@
 #	Project : GEO LOCATION - Inspired From DBIP PHP Script
 #
 
-# TEST USAGE
-# python csv_importer.py --clear-table --insert-type=TYPE_COUNTRY --file="c:/Users/lawrence/Desktop/dbip-phpsrc-2.1/dbip-city-2018-03.csv.gz" use_pgsql --dsn="dbname='geolocation' host='localhost' user='postgres' password='fusion@123'"
 #
 
 
