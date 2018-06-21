@@ -9,7 +9,6 @@
 
 import os, sys, csv
 import ipaddress
-import filetype
 import gzip
 import psycopg2
 import argparse
@@ -376,7 +375,6 @@ def required_func(connection, args):
 	# Check For --clear-table and --update-table
 	if args.clear_table:
 		connection.empty_table()
-
 	if args.update_table:
 		print(">>> Insertion of new records initiated. Not a good idea, may insert duplicate records.")	
 

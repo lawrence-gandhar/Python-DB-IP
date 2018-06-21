@@ -1,0 +1,45 @@
+# POSTGRESQL
+
+CREATE TABLE public.dbip_lookup
+(
+    addr_type character varying(4) COLLATE pg_catalog."default",
+    ip_start inet NOT NULL,
+    ip_end inet NOT NULL,
+    country character varying(2) COLLATE pg_catalog."default",
+    stateprov character varying(80) COLLATE pg_catalog."default",
+    district character varying(80) COLLATE pg_catalog."default",
+    city character varying(80) COLLATE pg_catalog."default",
+    zipcode character varying(20) COLLATE pg_catalog."default",
+    latitude float8 ,
+    longitude float8 ,
+    geoname_id bigint,
+    timezone_offset float8,
+    timezone_name character varying(64) COLLATE pg_catalog."default",
+    isp_name character varying(128) COLLATE pg_catalog."default",
+    connection_type character varying(10) COLLATE pg_catalog."default",
+    organization_name character varying(128) COLLATE pg_catalog."default",
+    CONSTRAINT dbip_lookup_pkey PRIMARY KEY (ip_start)
+)
+
+
+# MYSQL
+
+CREATE TABLE `dbip_lookup` (
+  `addr_type` enum('ipv4','ipv6') NOT NULL,
+  `ip_start` varbinary(16) NOT NULL,
+  `ip_end` varbinary(16) NOT NULL,
+  `country` char(2) NOT NULL,
+  `stateprov` varchar(80) NOT NULL,
+  `district` varchar(80) NOT NULL,
+  `city` varchar(80) NOT NULL,
+  `zipcode` varchar(20) NOT NULL,
+  `latitude` float NOT NULL,
+  `longitude` float NOT NULL,
+  `geoname_id` int(11) DEFAULT NULL,
+  `timezone_offset` float NOT NULL,
+  `timezone_name` varchar(64) NOT NULL,
+  `isp_name` varchar(128) NOT NULL,
+  `connection_type` enum('dialup','isdn','cable','dsl','fttx','wireless') DEFAULT NULL,
+  `organization_name` varchar(128) NOT NULL,
+  PRIMARY KEY (`addr_type`,`ip_start`)
+);
