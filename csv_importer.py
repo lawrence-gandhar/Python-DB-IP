@@ -418,7 +418,7 @@ if __name__ == "__main__":
 	#
 	# Defining Sub Parsers
 	#
-	subparsers = parser.add_subparsers(help='sub-command help')
+	subparsers = parser.add_subparsers(help='type use_pgsql/use_mssql/use_mysql --help for database connection sub-command help')
 
 	#
 	# Defining Sub Parsers for connecting different database engines
