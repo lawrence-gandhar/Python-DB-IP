@@ -1,7 +1,6 @@
 #
 #	Author: LAWRENCE GANDHAR
 #	Date : 15 March 2018
-# 	Last Updated On : 21 June 2018 
 #	Project : GEO LOCATION - Inspired From DBIP PHP Script
 #
 
