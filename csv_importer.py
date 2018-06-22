@@ -10,8 +10,8 @@
 import os, sys, csv
 import ipaddress
 import gzip
-import psycopg2
 import argparse
+import psycopg2
 import mysql.connector
 
 
