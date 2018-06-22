@@ -12,6 +12,7 @@ import ipaddress
 import gzip
 import psycopg2
 import argparse
+import mysql.connector
 
 
 #******************************************************************************************
