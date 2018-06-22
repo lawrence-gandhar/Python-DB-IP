@@ -4,7 +4,6 @@
 #	Project : GEO LOCATION - Inspired From DBIP PHP Script
 #
 #
-#
 
 
 import os, sys, csv
